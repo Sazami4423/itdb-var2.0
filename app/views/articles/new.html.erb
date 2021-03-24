@@ -1,0 +1,21 @@
+  <%# ヘッダー %>
+  <div class="header">
+  <div class="header-title">
+     <%= link_to 'ITDB 情報技術データベース', root_path, class: "title" %>
+  </div>
+  <div class="new-page">
+    <%= link_to '新規投稿', new_article_path, class: "new-link-tag" %>
+  </div>
+  <div class="search">
+    
+  </div>
+</div>
+
+<div class="new-pages">
+<h3>投稿する</h3>
+    <%= form_with(model: @article, local: true) do |form| %>
+      <%= form.text_field :title, placeholder: "Nickname" %>
+      <%= form.text_area :text, placeholder: "text"%>
+      <%= form.submit "SEND" %>
+    <% end %>
+  </div>

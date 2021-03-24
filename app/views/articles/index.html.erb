@@ -1,0 +1,93 @@
+<div class="main-page">
+
+  <%# ヘッダー %>
+<%= render "shared/homeheader" %>
+
+<div class="column">
+<%# 左カラム %>
+<div class="left-column">
+  <div class="left-title-column">
+    <h1 class="left-title">Ruby</h1>
+    <%# 種類別に表示される機能 %>
+    <%# プルダウンで選択できる機能 %>
+  </div>
+  <div class="choice">
+    <%# スクロールで表示されるタグ %>
+    <ul>
+    <li>・Ruby</li>
+    <li>・Rails</li>
+    <li>・メソッド</li>
+    <li>・etc...</li>
+    </ul>
+  </div>
+  <div class="left-search">
+    <form class="search-forms" action="#">
+      <button class="search-buttons">
+      検索
+      </button>
+      <input class='input-boxs' placeholder='言語別検索'>
+      <%# placeholderにRuby,js,php内検索など指定した言語によって表示が変わるようにする。 %>
+      <%# 言語別で検索できる機能 %>
+  </div>
+  <div class="result">
+    <p class="result-search">検索結果</p>
+    <%# left-searchで検索した結果が表示される %>
+    <%# クリックしたらメインカラムにデータが表示される %>
+    <div class="result-search-name">
+    <p>DB削除</p>
+    <p>DBステータス確認</p>
+    <p>DBコマンド集</p>
+    <p>etc...</p>
+    </div>
+  </div>
+</div>
+
+<%# メインカラム %>
+<div class="main-column">
+  <div class="main-title">
+    <h2 class="main-title-column">DBステータス確認</h2>
+    <%# resultでクリックしたタイトル %>
+  </div>
+  <div class="main-content">
+   <% @articles.each do |article| %>
+      <p><%= article.title %></p>
+      <span class="name">
+        <%= article.text %>
+      </span>
+    <% end %>
+  </div>
+</div>
+
+<%# 右カラム %>
+<div class="right-column">
+  <div class="sign_up">
+    <ul class='lists-right'>
+      <%# if user_signed_in? %>
+      <li><%#= link_to current_user.nickname, "#", class: "user-nickname" %> </li> 
+      <li><%#= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li> 
+      <%# else %>
+      <li><%#= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+      <li><%#= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+      <%# end %>
+    </ul>
+  </div>
+  <div class="table-content">
+    <%# クリックしたら表示されている見出しにスクロールされる %>
+    <ul>
+      <li class="list-group-item">
+        目次
+        </li>
+      <li class="list-item">・マイグレーション</li>
+      <li class="list-item">・ロールバック</li>
+      <li class="list-item">・リセット</li>
+      <li class="list-item">・etc</li>
+    </ul>
+  </div>
+  <div class="api-link">
+  <a class="twitter-timeline" data-lang="ja" data-height="345" data-theme="dark" href="https://twitter.com/UN_NERV?ref_src=twsrc%5Etfw">Tweets by UN_NERV</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+</div>
+<%# フッター %>
+<%= render "shared/homefooter" %>
+

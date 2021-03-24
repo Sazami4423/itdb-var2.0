@@ -1,0 +1,210 @@
+.main{}
+
+
+/* ヘッダー */
+.header{
+  display: flex;
+  height: 100px;
+  background-color: rgb(22, 22, 22);
+  color: #ffffff;
+}
+
+.header-title{
+  width: 35vw;
+  padding: 4vh;
+  border: 1px solid white;
+}
+
+.title{
+  font-family: "Hannari";
+  color: #ffffff;
+  text-decoration: none;
+  
+  font-size: 30px;
+  text-align: center;
+}
+
+.new-page{
+  width: 15vw;
+  padding: 5vh;
+  text-align: center;
+  font-size: 20px;
+  color: #d6d6d6;
+  border: 1px solid white;
+}
+
+.new-link-tag{
+  color: #d6d6d6;
+  text-decoration: none;
+}
+
+.search{
+  padding: 4vh;
+  width: 50vw;
+  border: 1px solid white;
+  
+  
+}
+
+.search-form{}
+
+.input-box{}
+
+.search-button{}
+
+
+.column{
+  display: flex;
+}
+
+/* 左カラム */
+.left-column{
+  background-color: #333333;
+  border: 1px solid white;
+  color: #d6d6d6;
+  height: calc(100vh - 100px - 60px);
+  width: 270px;
+}
+
+.left-title-column{
+  height: 70px;
+  border: 1px solid white;
+}
+
+.left-title{
+  font-size: 50px;
+  text-align: center;
+  padding: 1vh;
+  color: red;
+}
+
+.choice{
+  height: 100px;
+  border: 1px solid white;
+}
+
+.left-search{
+  height: 50px;
+  border: 1px solid white;
+  padding-top: 6px;
+  padding-left: 10px;
+}
+
+.search-forms{
+  width: 40vw;
+  height: 5vh;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.search-form>.input-box {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.search-buttons {
+  width: 10vh;
+  border: 0;
+  cursor: pointer;
+  background-color: #3ccace;
+  padding: 5px;
+}
+
+.result{}
+
+.result-search{
+  font-size: 20px;
+  padding: 10px;
+}
+
+.result-search-name{
+  font-size: 16px;
+  padding: 10px;
+}
+
+
+/* メインカラム */
+.main-column{
+  background-color: #333333;
+  border: 1px solid white;
+  color: #d6d6d6;
+  height: calc(100vh - 100px - 60px);
+  width: calc(100vw - 270px - 250px);
+}
+
+.main-title{
+  height: 50px;
+  padding: 20px;
+}
+
+.main-title-column{
+  font-size: 30px;
+}
+
+.main-content{
+  padding: 10px;
+}
+
+
+/* 右カラム */
+.right-column{
+  background-color: #333333;
+  border: 1px solid white;
+  color: #d6d6d6;
+  height: calc(100vh - 100px - 60px);
+  width: 250px;
+}
+
+.sign_up{
+  height: 60px;
+  border: 1px solid white;
+}
+
+.lists-right{
+  text-align: center;
+  padding: 5px;
+  
+}
+
+.user-nickname{
+  color: #d6d6d6;
+  font-size: 20px;
+}
+
+.logout{
+  color: #d6d6d6;
+  font-size: 20px;
+}
+
+.login{
+  color: #d6d6d6;
+  font-size: 20px;
+}
+
+.sign-up{
+  color: #d6d6d6;
+  font-size: 20px;
+}
+
+.table-content{
+  height: 250px;
+  border: 1px solid white;
+}
+
+.list-group-item{
+  height: 35px;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-left: 10px;
+  background-color: #4d4d4d;
+}
+
+.list-item{
+  font-size: 20px;
+  padding: 10px 5px;
+}
+
+.api-link{
+  border: 1px solid white;
+}

@@ -1,0 +1,16 @@
+<%# CSS・・・assets/stylesheets/shared/header.css %>
+<div class="header">
+  <div class="header-title">
+     <%= link_to 'ITDB 情報技術データベース', root_path, class: "title" %>
+  </div>
+  <div class="new-page">
+    <%= link_to '新規投稿', new_article_path, class: "new-link-tag" %>
+  </div>
+  <div class="search">
+    <form class="search-form" action="#">
+      <button class="search-buttons">
+      検索
+      </button>
+      <input class='input-box' placeholder='すべてを検索'>
+  </div>
+</div>

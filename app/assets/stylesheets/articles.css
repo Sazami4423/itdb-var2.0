@@ -1,58 +1,5 @@
 .main{}
 
-
-/* ヘッダー */
-.header{
-  display: flex;
-  height: 100px;
-  background-color: rgb(22, 22, 22);
-  color: #ffffff;
-}
-
-.header-title{
-  width: 35vw;
-  padding: 4vh;
-  border: 1px solid white;
-}
-
-.title{
-  font-family: "Hannari";
-  color: #ffffff;
-  text-decoration: none;
-  
-  font-size: 30px;
-  text-align: center;
-}
-
-.new-page{
-  width: 15vw;
-  padding: 5vh;
-  text-align: center;
-  font-size: 20px;
-  color: #d6d6d6;
-  border: 1px solid white;
-}
-
-.new-link-tag{
-  color: #d6d6d6;
-  text-decoration: none;
-}
-
-.search{
-  padding: 4vh;
-  width: 50vw;
-  border: 1px solid white;
-  
-  
-}
-
-.search-form{}
-
-.input-box{}
-
-.search-button{}
-
-
 .column{
   display: flex;
 }
@@ -72,10 +19,15 @@
 }
 
 .left-title{
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
   padding: 1vh;
   color: red;
+  margin:0;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  background:transparent;
 }
 
 .choice{
@@ -126,9 +78,10 @@
 
 /* メインカラム */
 .main-column{
+  overflow: scroll;
   background-color: #333333;
   border: 1px solid white;
-  color: #d6d6d6;
+  color: #ffffff;
   height: calc(100vh - 100px - 60px);
   width: calc(100vw - 270px - 250px);
 }
@@ -140,6 +93,7 @@
 
 .main-title-column{
   font-size: 30px;
+  margin: 0;
 }
 
 .main-content{
@@ -156,39 +110,9 @@
   width: 250px;
 }
 
-.sign_up{
-  height: 60px;
-  border: 1px solid white;
-}
-
-.lists-right{
-  text-align: center;
-  padding: 5px;
-  
-}
-
-.user-nickname{
-  color: #d6d6d6;
-  font-size: 20px;
-}
-
-.logout{
-  color: #d6d6d6;
-  font-size: 20px;
-}
-
-.login{
-  color: #d6d6d6;
-  font-size: 20px;
-}
-
-.sign-up{
-  color: #d6d6d6;
-  font-size: 20px;
-}
 
 .table-content{
-  height: 250px;
+  height: 50%;
   border: 1px solid white;
 }
 

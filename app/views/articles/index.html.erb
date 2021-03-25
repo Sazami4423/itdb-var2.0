@@ -34,43 +34,31 @@
     <%# left-searchで検索した結果が表示される %>
     <%# クリックしたらメインカラムにデータが表示される %>
     <div class="result-search-name">
-    <p>DB削除</p>
-    <p>DBステータス確認</p>
-    <p>DBコマンド集</p>
-    <p>etc...</p>
+    <% @articles.each do |article| %>
+    <p>：<%= article.title %></p>
+    <% end %>
     </div>
   </div>
 </div>
 
 <%# メインカラム %>
 <div class="main-column">
+<% @articles.each do |article| %>
   <div class="main-title">
-    <h2 class="main-title-column">DBステータス確認</h2>
+    <h2 class="main-title-column">：<%= article.title %></h2>
     <%# resultでクリックしたタイトル %>
   </div>
   <div class="main-content">
-   <% @articles.each do |article| %>
-      <p><%= article.title %></p>
+      
       <span class="name">
-        <%= article.text %>
+        <%= raw article.text %>
       </span>
-    <% end %>
   </div>
+  <% end %>
 </div>
 
 <%# 右カラム %>
 <div class="right-column">
-  <div class="sign_up">
-    <ul class='lists-right'>
-      <%# if user_signed_in? %>
-      <li><%#= link_to current_user.nickname, "#", class: "user-nickname" %> </li> 
-      <li><%#= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li> 
-      <%# else %>
-      <li><%#= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-      <li><%#= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-      <%# end %>
-    </ul>
-  </div>
   <div class="table-content">
     <%# クリックしたら表示されている見出しにスクロールされる %>
     <ul>

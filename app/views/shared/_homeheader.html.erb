@@ -4,7 +4,7 @@
      <%= link_to 'ITDB 情報技術データベース', root_path, class: "title" %>
   </div>
   <div class="new-page">
-    <%= link_to '新規投稿', new_article_path, class: "new-link-tag" %>
+    <%= link_to '新規投稿', new_article_path, class: "myButton" %>
   </div>
   <div class="search">
     <form class="search-form" action="#">
@@ -12,5 +12,18 @@
       検索
       </button>
       <input class='input-box' placeholder='すべてを検索'>
+  </div>
+  <%# devise機能 %>
+  <div class="sign_up">
+    <p class="admin">管理者用</p>
+    <ul class='lists-right'>
+      <% if user_signed_in? %>
+      <li class="devise"><%= link_to current_user.nickname, "#", class: "user-nickname" %> </li> 
+      <li class="devise"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li> 
+      <% else %>
+      <li class="devise"><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+      <li class="devise"><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+      <% end %>
+    </ul>
   </div>
 </div>

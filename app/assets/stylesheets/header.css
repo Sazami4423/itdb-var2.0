@@ -2,11 +2,66 @@
   box-sizing: border-box;
 }
 
-.top-page-header {
-  width: 100vw;
-  padding: 2vh 15vw;
+.header{
   display: flex;
-  flex-direction: column;
+  height: 100px;
+  background-color: rgb(22, 22, 22);
+  color: #ffffff;
+}
+
+.header-title{
+  width: 35vw;
+  padding: 4vh;
+  border: 1px solid white;
+}
+
+.title{
+  font-family: "Hannari";
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+}
+.title:hover{
+  color: rgb(20, 35, 255);
+}
+
+/* 新規投稿 */
+.new-page{
+  width: 15vw;
+  font-size: 20px;
+  color: #d6d6d6;
+  border: 1px solid white;
+  text-align: center;
+  padding-top: 1.2%;
+}
+
+.myButton {
+	background-color:#414141;
+	border-radius:28px;
+	border:1px solid #e3e3e3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5c5c5c;
+}
+.myButton:hover {
+	background-color:#636363;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* 検索フォーム */
+.search{
+  padding: 4vh;
+  width: 34.2vw;
+  border: 1px solid white;
 }
 
 .search-bar-contents {
@@ -15,13 +70,8 @@
   align-items: center;
 }
 
-.furima-icon {
-  width: 10vw;
-  margin-right: 10vw;
-}
-
 .search-form {
-  width: 40vw;
+  width: 30vw;
   height: 5vh;
   display: flex;
   margin-bottom: 5px;
@@ -39,4 +89,71 @@
   cursor: pointer;
   background-color: #3ccace;
   padding: 8px;
+}
+
+.search-form{}
+
+.input-box{}
+
+.search-button{}
+
+
+/* 管理者登録 */
+.sign_up{
+  height: 100px;
+  width: 15.8vw;
+  padding-top: 0.5%;
+  border: 1px solid white;
+}
+
+.admin{
+  text-align: center;
+  margin:0;
+}
+
+.lists-right{
+  height: 60px;
+  width: 150px;
+  padding: 5px;
+  margin-left: 50px;
+  margin-top: 5px;
+  background-color: rgb(26, 26, 26);
+  border: 1px solid white;
+}
+
+.devise{
+  margin-top: 3px;
+}
+
+.user-nickname{
+  color: #d6d6d6;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.logout{
+  color: #d6d6d6;
+  font-size: 20px;
+  text-decoration: none;
+}
+.logout:hover{
+  color: rgb(245, 104, 134);
+}
+
+.login{
+  color: #d6d6d6;
+  font-size: 20px;
+  text-decoration: none;
+}
+.login:hover{
+  color: rgb(245, 104, 134);
+}
+
+.sign-up{
+  color: #d6d6d6;
+  font-size: 20px;
+  text-decoration: none;
+}
+.sign-up:hover{
+  color: rgb(245, 104, 134);
 }

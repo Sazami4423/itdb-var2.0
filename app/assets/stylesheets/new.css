@@ -1,0 +1,44 @@
+.new-pages{
+  height: 700px;
+  display: flex;
+  background-color: #333333;
+}
+.null-column-left{
+  width: 10vw;
+}
+
+.edit-column{
+  width: 80vw;
+  text-align: center;
+}
+.btn{
+  height: 70px;
+  width: 150px;
+  margin-top: 30px;
+  font-size: 20px;
+  border: 1px solid white;
+  color: #d6d6d6;
+  background-color: #333333;
+}
+
+.null-column-right{
+  width: 10vw;
+}
+
+.new-text{
+  font-size: 30px;
+  color: #d6d6d6;
+}
+
+.new_title {
+  width: 100%;
+  margin-top: 5px;
+  height: 48px;
+  padding: 10px 16px 8px;
+  margin-bottom: 40px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 20px;
+  resize: none;
+}
